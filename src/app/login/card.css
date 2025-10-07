@@ -1,0 +1,87 @@
+
+
+.card-tridimensional {
+  background: rgba(36, 39, 55, 0.86);
+  border-radius: 20px;
+  box-shadow:
+    0 10px 28px #0009,
+    0 2px 8px #00000030,
+    0 1.5px 8px #fff1 inset;
+  border: 1.5px solid #3a3f54;
+  padding: 38px 32px 28px 32px;
+  max-width: 420px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffff;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1.8px;
+  text-shadow: 0 2px 10px #23242880, 0 1px 0px #96000088;
+  font-family: 'Geist', 'Roboto', Arial, sans-serif;
+}
+
+/*===========================================================================*/
+
+.ribbon,
+.ribbon-2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #960000;
+  user-select: none;
+}
+
+.ribbon,
+.ribbon-2 {
+  --f: .5em;
+  --r: .8em; 
+  margin-bottom: 10px;
+  margin-left: -78px;
+  position: static;
+  width: 160px; 
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ededed; 
+  padding-inline: .7em;
+  line-height: 1.8;
+  background: #960000;
+  border-bottom: var(--f) solid #0005;
+  border-right: var(--r) solid #0000;
+  box-sizing: border-box;
+  clip-path: 
+    polygon(0 0,0 calc(100% - var(--f)),var(--f) 100%,
+      var(--f) calc(100% - var(--f)),100% calc(100% - var(--f)),
+      calc(100% - var(--r)) calc(50% - var(--f)/2),100% 0);
+}
+
+.input-line,
+.input-line-pass {
+  flex: 1 0 0;
+  border: none;
+  border-bottom: 1px solid #960000;
+  background: transparent;
+  outline: none;
+  color: #ededed;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  width: 200px;
+  transition: border-color 0.17s;
+  line-height: 0;
+}
+
+.input-ribbon-wrapper,
+.input-ribbon-wrapper-pass {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;      
+}

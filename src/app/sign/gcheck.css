@@ -1,0 +1,42 @@
+.checkbox-alt-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+input.checkbox-alt {
+  margin-top: 10px;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 6px;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+input.checkbox-alt:checked {
+  background: #960000;
+}
+
+input.checkbox-alt:checked::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  width: 9px;
+  height: 22px;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}

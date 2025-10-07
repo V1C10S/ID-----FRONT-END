@@ -1,0 +1,92 @@
+/*================ CARD =================*/
+.card-alt {
+  background: rgba(36, 39, 55, 0.86);
+  border-radius: 20px;
+  box-shadow:
+    0 10px 28px #0009,
+    0 2px 8px #00000030,
+    0 1.5px 8px #fff1 inset;
+  border: 1.5px solid #3a3f54;
+  padding: 38px 32px 28px 32px;
+  width: 550px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title-alt {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1.8px;
+  text-shadow: 0 2px 10px #23242880, 0 1px 0px #96000088;
+  font-family: 'Geist', 'Roboto', Arial, sans-serif;
+}
+
+/*================ FORM ROWS =================*/
+.form-wrapper-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.form-row-alt {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espaço entre ribbon e input */
+  width: 100%;
+}
+
+/*================ RIBBONS =================*/
+.ribbon-alt,
+.ribbon-2-alt {
+  min-width: 150px; /* largura fixa para estabilidade */
+  font-size: 1em;
+  margin-left: -40px;
+  font-weight: bold;
+  color: #ededed;
+  padding: 5px 10px;
+  line-height: 1.8;
+  background: #960000;
+  border-bottom: 0.5em solid #0005;
+  border-right: 0.8em solid transparent;
+  box-sizing: border-box;
+  clip-path: polygon(
+    0 0, 0 calc(100% - 0.5em), 0.5em 100%, 0.5em calc(100% - 0.5em),
+    100% calc(100% - 0.5em), calc(100% - 0.8em) calc(50% - 0.25em), 100% 0
+  );
+}
+
+/*================ INPUTS =================*/
+.input-line-alt,
+.input-line-pass-alt {
+  border: none;
+  border-bottom: 1px solid #960000;
+  background: transparent;
+  outline: none;
+  color: #ededed;
+  font-size: 1.1rem;
+  padding: 6px 10px;
+  flex: 1; /* ocupa o espaço restante da row */
+  transition: border-color 0.17s;
+  line-height: 1.2;
+}
+
+/*================ PASSWORD WRAPPER =================*/
+.password-wrapper-alt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1; /* ocupa espaço da input */
+}
+
+.toggle-password-alt {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}

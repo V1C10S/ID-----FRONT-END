@@ -1,0 +1,37 @@
+.password-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.input-line-pass {
+  flex: 1;
+  padding-right: 40px; 
+}
+
+.toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0138c;
+  font-size: 2rem;
+  position: absolute;
+  right:0;
+  top: 57%;
+  transform: translateY(-50%);
+  border-radius: 6px;         
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.toggle-password:focus,
+.toggle-password:hover {
+  background: none;
+  outline: none;
+}
