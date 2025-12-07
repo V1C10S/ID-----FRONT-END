@@ -45,7 +45,7 @@ export default function Page() {
   const [visible, setVisible] = useState(false);
   const router = useRouter();
 
-const handleSubmmit = async (e) => {
+const handleSubmmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   if (!username || !senha) {
     setErro('Preencha todos os campos.');
