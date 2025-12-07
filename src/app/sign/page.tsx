@@ -10,6 +10,9 @@ import './gmodal.css';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ?? 'http://127.0.0.1:5500';
+
 type CheckboxProps = {
   id: string;
   label: string;
@@ -89,7 +92,7 @@ export default function SignUp() {
 
     setErro('');
     try {
-  const res = await fetch('http://localhost:5500/sign', {
+    const res = await fetch(`${API_BASE_URL}/sign`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
