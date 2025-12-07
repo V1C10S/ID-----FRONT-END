@@ -55,15 +55,15 @@ const handleSubmmit = async (e) => {
 
   setErro('');
 
-  try {
-    const res = await fetch('http://localhost:5500/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        username,
-        password: senha
-      })
-    });
+    try {
+      const res = await fetch(`${API_BASE_URL}/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username,
+          password: senha,
+        }),
+      });
 
     const result = await res.json();
 
